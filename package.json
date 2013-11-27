@@ -1,33 +1,33 @@
 {
-    "name": "grunt-vanilli",
-    "version": "0.0.1",
-    "description": "Start/Stop Vanilli",
-    "author": {
-        "name": "Alistair Dutton",
-        "email": "kelveden@gmail.com"
-    },
-    "main": "Gruntfile.js",
-    "engines": {
-        "node": ">=0.10.0"
-    },
-    "licenses": [
-        {
-            "type": "BSD-3-Clause"
-        }
-    ],
-    "scripts": {
-        "test": "grunt test"
-    },
-    "devDependencies": {
-        "grunt": "~0.4.0",
-        "grunt-cli": "~0.1.11",
-        "grunt-contrib-jshint": "~0.2.0",
-        "grunt-bump": "~0.0.11",
-        "load-grunt-tasks": "~0.2.0"
-    },
-    "dependencies": {
-        "bunyan": "~0.21.4",
-        "grunt-bunyan": "~0.4.1",
-        "vanilli": "*"
+  "name": "grunt-vanilli",
+  "version": "0.0.1",
+  "description": "Start/Stop Vanilli",
+  "author": {
+    "name": "Alistair Dutton",
+    "email": "kelveden@gmail.com"
+  },
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "licenses": [
+    {
+      "type": "BSD-3-Clause"
     }
+  ],
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-cli": "~0.1.11",
+    "grunt-contrib-jshint": "~0.2.0",
+    "grunt-release": "~0.6.0",
+    "load-grunt-tasks": "~0.2.0"
+  },
+  "dependencies": {
+    "bunyan": "~0.21.4",
+    "grunt-bunyan": "~0.4.1",
+    "vanilli": "*"
+  }
 }
