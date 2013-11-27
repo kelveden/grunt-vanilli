@@ -21,13 +21,6 @@ module.exports = function (grunt) {
             },
             start: {},
             stop: {}
-        },
-        bump: {
-            options: {
-                files: [ 'package.json' ],
-                commitFiles: [ 'package.json' ],
-                pushTo: "origin"
-            }
         }
     });
 
