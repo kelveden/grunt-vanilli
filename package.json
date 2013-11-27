@@ -1,0 +1,30 @@
+{
+  "name": "grunt-vanilli",
+  "version": "0.0.1",
+  "description": "Start/Stop Vanilli",
+  "author": {
+    "name": "Alistair Dutton",
+    "email": "kelveden@gmail.com"
+  },
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "licenses": [
+    {
+      "type": "BSD-3-Clause"
+    }
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.2.0",
+    "grunt": "~0.4.0",
+    "load-grunt-tasks": "~0.2.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "bunyan": "~0.21.4",
+    "grunt-bunyan": "~0.4.1"
+  }
+}
