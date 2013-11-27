@@ -36,6 +36,8 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-bump');
     grunt.loadTasks('tasks');
 
-    grunt.registerTask('default', ['jshint']);
     grunt.registerTask('test', ['default', 'bunyan', 'vanilli:start', 'vanilli:stop' ]);
+    grunt.registerTask('release', ['test', 'bump' ]);
+
+    grunt.registerTask('default', ['jshint']);
 };
