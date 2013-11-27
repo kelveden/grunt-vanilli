@@ -21,11 +21,19 @@ module.exports = function (grunt) {
             },
             start: {},
             stop: {}
+        },
+        bump: {
+            options: {
+                files: [ 'package.json' ],
+                commitFiles: [ 'package.json' ],
+                pushTo: "origin"
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-bunyan');
+    grunt.loadNpmTasks('grunt-bump');
     grunt.loadTasks('tasks');
 
     grunt.registerTask('default', ['jshint']);
