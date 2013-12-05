@@ -1,10 +1,14 @@
 {
   "name": "grunt-vanilli",
   "version": "0.0.2",
-  "description": "Start/Stop Vanilli",
+  "description": "Start/Stop Vanilli from Grunt",
   "author": {
     "name": "Alistair Dutton",
     "email": "kelveden@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kelveden/grunt-vanilli"
   },
   "main": "Gruntfile.js",
   "engines": {
