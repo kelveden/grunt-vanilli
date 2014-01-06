@@ -29,4 +29,6 @@ Example
         stop: {}
     }
     ...
+    grunt.loadNpmTasks('grunt-vanilli');
+    ...
     grunt.registerTask('test', ['vanilli:start', 'testmystuff', 'vanilli:stop' ]);
