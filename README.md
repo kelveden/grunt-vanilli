@@ -24,9 +24,7 @@ Example
         options: {
             port: 14000,
             logLevel: "debug"
-        },
-        start: {},
-        stop: {}
+        }
     }
     ...
     grunt.loadNpmTasks('grunt-vanilli');
