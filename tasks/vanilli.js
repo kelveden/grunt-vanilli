@@ -4,8 +4,7 @@ module.exports = function (grunt) {
 
     var vanilli = require('vanilli');
 
-    grunt.registerMultiTask('vanilli', 'Start/Stop Vanilli', function () {
-
+    grunt.registerTask('vanilli', 'Start/Stop Vanilli', function (target) {
         var config = this.options(),
             targets = {
                 start: function () {
@@ -16,11 +15,10 @@ module.exports = function (grunt) {
                 }
             };
 
-        if (targets[this.target]) {
-            targets[this.target]();
+        if (targets[target]) {
+            targets[target]();
         } else {
             throw new Error("Unrecognised target '" + this.target + "'.");
         }
     });
-
 };

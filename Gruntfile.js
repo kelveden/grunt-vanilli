@@ -18,9 +18,7 @@ module.exports = function (grunt) {
             options: {
                 port: 14000,
                 logLevel: "debug"
-            },
-            start: {},
-            stop: {}
+            }
         }
     });
 
