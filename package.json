@@ -1,6 +1,6 @@
 {
   "name": "grunt-vanilli",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Start/Stop Vanilli from Grunt",
   "author": {
     "name": "Alistair Dutton",
