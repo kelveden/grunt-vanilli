@@ -32,6 +32,6 @@
   "dependencies": {
     "bunyan": "0.22.1",
     "grunt-bunyan": "0.4.3",
-    "vanilli": "0.x"
+    "vanilli": "1.x"
   }
 }
