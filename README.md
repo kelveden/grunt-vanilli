@@ -1,7 +1,9 @@
 grunt-vanilli
 =============
 [![Build Status](https://travis-ci.org/kelveden/grunt-vanilli.png?branch=master)](https://travis-ci.org/kelveden/grunt-vanilli)
-[![Dependencies Status](https://david-dm.org/kelveden/grunt-vanilli.png?branch=master)](https://david-dm.org/kelveden/grunt-vanilli)
+
+> *IMPORTANT*: As of vanilli 3.x, this plugin is deprecated. Vanilli itself now provides its own javascript API that
+> includes functions for managing the lifecycle of vanilli.
 
 Grunt plugin for starting/stopping [vanilli](https://github.com/kelveden/vanilli).
 
