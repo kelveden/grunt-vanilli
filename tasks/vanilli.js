@@ -1,22 +1,24 @@
 'use strict';
+var vanilli = require('vanilli');
 
 module.exports = function (grunt) {
-
-    var vanilli = require('vanilli');
+    var vanilliServer;
 
     grunt.registerTask('vanilli', 'Start/Stop Vanilli', function (target) {
-        var config = this.options(),
+
+        var config  = this.options(),
             targets = {
                 start: function () {
-                    vanilli.start(config);
+                    vanilliServer = vanilli.init(config);
+                    vanilliServer.listen(config.port);
                 },
                 stop: function () {
-                    vanilli.stop();
+                    vanilliServer.stop();
                 }
             };
 
-        if (targets[target]) {
-            targets[target]();
+        if (targets[ target ]) {
+            targets[ target ]();
         } else {
             throw new Error("Unrecognised target '" + this.target + "'.");
         }
