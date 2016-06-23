@@ -22,12 +22,9 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-bunyan');
-    grunt.loadNpmTasks('grunt-release');
     grunt.loadTasks('tasks');
 
-    grunt.registerTask('test', ['default', 'bunyan', 'vanilli:start', 'vanilli:stop' ]);
+    grunt.registerTask('test', ['default', 'vanilli:start', 'vanilli:stop' ]);
     grunt.registerTask('publish', ['test', 'release' ]);
 
     grunt.registerTask('default', ['jshint']);
